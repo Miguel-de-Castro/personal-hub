@@ -6,6 +6,8 @@ A dark, single-user productivity portal that keeps four parts of a working life 
   <img src="docs/screenshots/dashboard.png" alt="Dashboard" width="820" />
 </p>
 
+Landing page de apresentação (pt-BR): [`landing/`](landing/).
+
 ## Features
 
 - **Dashboard.** A greeting plus counters (tasks due/overdue, active learning topics, open job applications, topics in progress), "Daily Focus" tasks, learning velocity bars and a job pipeline summary.
