@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Personal Hub, portal pessoal de produtividade</title>
+  <meta name="description" content="Projeto pessoal em React e Express que reúne tarefas, trilha de aprendizado, pipeline de vagas e diário. Roda local, ainda em desenvolvimento.">
+  <meta name="author" content="Miguel Castro">
+  <meta name="color-scheme" content="light dark">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Personal Hub, portal pessoal de produtividade">
+  <meta property="og:description" content="Tarefas, trilha de aprendizado, pipeline de vagas e diário num só portal. Projeto em desenvolvimento que roda local.">
+  <meta property="og:image" content="https://raw.githubusercontent.com/Miguel-de-Castro/personal-hub/main/landing/static/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Dashboard do Personal Hub com contadores de tarefas, vagas e tópicos de estudo.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Personal Hub, portal pessoal de produtividade">
+  <meta name="twitter:description" content="Tarefas, trilha de aprendizado, pipeline de vagas e diário num só portal. Projeto em desenvolvimento que roda local.">
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/Miguel-de-Castro/personal-hub/main/landing/static/og.png">
+  <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/static/fonts/geist-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="top">
+    <div class="wrap top-row">
+      <a class="brand" href="#topo" aria-label="Personal Hub, início da página">
+        <img src="/static/favicon.svg" alt="" width="24" height="24">
+        <span>Personal Hub</span>
+      </a>
+      <nav aria-label="Seções da página">
+        <ul>
+          <li><a href="#telas">Telas</a></li>
+          <li><a href="#decisoes">Decisões</a></li>
+          <li><a href="#como-rodar">Como rodar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" id="topo" aria-labelledby="titulo">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow rise d0">Projeto em desenvolvimento</p>
+          <h1 id="titulo" class="rise d1">Tarefas, estudos, vagas e diário em um só portal.</h1>
+          <p class="lead rise d2">Projeto pessoal em React e Express que roda na sua máquina e guarda tudo num arquivo JSON.</p>
+          <p class="cta-row rise d3">
+            <a class="btn btn-primary" href="https://github.com/Miguel-de-Castro/personal-hub">Ver código no GitHub</a>
+            <a class="btn btn-ghost" href="#como-rodar">Como rodar</a>
+          </p>
+        </div>
+        <figure class="hero-shot rise d2">
+          <img src="/static/img/dashboard.webp" width="1440" height="900" fetchpriority="high"
+               alt="Dashboard do Personal Hub: saudação, quatro contadores (tarefas, tópicos ativos, vagas abertas e em andamento), lista de foco diário e barras de progresso de aprendizado.">
+        </figure>
+      </div>
+    </section>
+
+    <section class="band" id="estado" aria-labelledby="t-estado">
+      <div class="wrap">
+        <h2 id="t-estado">O que funciona hoje e o que ainda falta</h2>
+        <p class="sec-lead">O app está em construção. Esta lista foi conferida no código, não é promessa.</p>
+        <div class="status-grid">
+          <div class="status status-ok">
+            <h3>Funciona</h3>
+            <ul>
+              <li>Criar tarefas, tópicos de estudo, vagas e entradas de diário.</li>
+              <li>Concluir tarefas, com atualização imediata na tela.</li>
+              <li>Alternar entre dados de exemplo e dados próprios.</li>
+              <li>API completa, com validação, para os quatro recursos.</li>
+            </ul>
+          </div>
+          <div class="status status-todo">
+            <h3>Em desenvolvimento</h3>
+            <ul>
+              <li>Busca, notificações e filtros: estão na tela, mas não fazem nada.</li>
+              <li>Atalhos Quick Log e New Task da barra superior.</li>
+              <li>Editar e excluir pela interface. A API já aceita, a tela ainda não.</li>
+              <li>Menu dos cartões de vagas, barra de formatação do diário e página Support.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="screens" id="telas" aria-labelledby="t-telas">
+      <div class="wrap">
+        <h2 id="t-telas">Quatro áreas, uma navegação</h2>
+        <p class="sec-lead">Capturas reais do app com dados de exemplo fictícios. A interface está em inglês.</p>
+        <div class="bento">
+          <figure class="cell cell-jobs reveal">
+            <img src="/static/img/jobs.webp" width="1440" height="900" loading="lazy"
+                 alt="Pipeline de vagas em quadro kanban com colunas Wishlist, Applied, Interviewing e Offer, e um cartão por candidatura.">
+            <figcaption><strong>Pipeline de vagas.</strong> Quadro com etapas de wishlist a oferta, prioridade, link, faixa salarial e anotações.</figcaption>
+          </figure>
+          <figure class="cell cell-learning reveal">
+            <img src="/static/img/learning.webp" width="1440" height="900" loading="lazy"
+                 alt="Trilha de aprendizado com tópicos, status e percentual de progresso.">
+            <figcaption><strong>Trilha de aprendizado.</strong> Tópicos com status e progresso.</figcaption>
+          </figure>
+          <figure class="cell cell-log reveal">
+            <img src="/static/img/log.webp" width="1440" height="900" loading="lazy"
+                 alt="Diário com entradas anteriores à esquerda e editor com seletor de humor à direita.">
+            <figcaption><strong>Diário.</strong> Entradas anteriores e editor com humor.</figcaption>
+          </figure>
+          <figure class="cell cell-tasks reveal">
+            <img src="/static/img/tasks.webp" width="1440" height="900" loading="lazy"
+                 alt="Lista de tarefas com seção de atrasadas, contador de dias de atraso, prioridade e tags.">
+            <figcaption><strong>Tarefas.</strong> Prioridade, tags e prazo, com as atrasadas primeiro e a contagem de dias de atraso.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="decisions" id="decisoes" aria-labelledby="t-decisoes">
+      <div class="wrap">
+        <h2 id="t-decisoes">Decisões técnicas</h2>
+        <p class="sec-lead">Sem banco de dados e sem conta, mas com os cuidados de uma API de verdade.</p>
+        <div class="decisions-grid">
+          <figure class="side-shot reveal">
+            <img src="/static/img/settings.webp" width="1440" height="900" loading="lazy"
+                 alt="Tela de configurações com duas opções de fonte de dados: dados de exemplo (ativa) e meus dados.">
+            <figcaption>Exemplo e dados próprios ficam lado a lado. Trocar nunca apaga nada.</figcaption>
+          </figure>
+          <dl class="decision-list">
+            <div class="reveal">
+              <dt>API só para esta máquina</dt>
+              <dd>Escuta em 127.0.0.1 e recusa requisições com <code>Host</code> ou <code>Origin</code> que não sejam localhost, o que barra outros sites abertos no navegador e DNS rebinding.</dd>
+            </div>
+            <div class="reveal">
+              <dt>Validação sem dependências</dt>
+              <dd>Cada recurso declara os campos aceitos e o tipo de cada um. Campos desconhecidos são descartados, links só podem ser http(s) e <code>id</code> e <code>createdAt</code> vêm do servidor.</dd>
+            </div>
+            <div class="reveal">
+              <dt>Escrita atômica e serializada</dt>
+              <dd>As gravações passam por uma fila de promises e vão para um arquivo temporário antes de um rename. Duas edições seguidas não se misturam e uma queda não deixa JSON pela metade.</dd>
+            </div>
+            <div class="reveal">
+              <dt>Um roteador CRUD para tudo</dt>
+              <dd>Tarefas, tópicos, vagas e diário usam o mesmo roteador genérico, <code>createResourceRouter</code>, com schema e construtor próprios.</dd>
+            </div>
+            <div class="reveal">
+              <dt>Demo que nunca envelhece</dt>
+              <dd>Na primeira execução, as datas do conjunto de exemplo são deslocadas para o dia atual. As empresas do exemplo são fictícias.</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="stack" aria-labelledby="t-stack">
+      <div class="wrap">
+        <h2 id="t-stack">Stack</h2>
+        <p class="stack-line"><span class="k">web</span> React 18, TypeScript, Vite, Tailwind CSS v4, shadcn/ui (Base UI), React Router</p>
+        <p class="stack-line"><span class="k">server</span> Express 5, TypeScript (tsx), armazenamento em arquivo JSON</p>
+        <p class="stack-line"><span class="k">repo</span> monorepo com npm workspaces, licença MIT</p>
+      </div>
+    </section>
+
+    <section class="run" id="como-rodar" aria-labelledby="t-rodar">
+      <div class="wrap run-grid">
+        <div>
+          <h2 id="t-rodar">Como rodar localmente</h2>
+          <p class="sec-lead">Não há versão hospedada: o app foi feito para rodar só na sua máquina. Precisa de Node.js 20.19+ ou 22.12+.</p>
+          <p class="note">Na primeira leitura ou gravação, o servidor cria <code>server/data/db.json</code> a partir do arquivo de exemplo, já em modo de dados de exemplo.</p>
+        </div>
+        <div>
+          <pre class="code" tabindex="0" aria-label="Comandos para rodar o projeto"><code>git clone https://github.com/Miguel-de-Castro/personal-hub.git
+cd personal-hub
+npm install
+npm run dev</code></pre>
+          <p class="run-after">A API sobe em <code>localhost:4000</code> e o app em <code>localhost:5173</code>.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot-row">
+      <p>Feito por <a href="https://github.com/Miguel-de-Castro">Miguel Castro</a>. Licença MIT.</p>
+      <p><a href="https://github.com/Miguel-de-Castro/personal-hub">Ver código no GitHub</a></p>
+    </div>
+  </footer>
+</body>
+</html>
