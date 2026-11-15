@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+server/dist/
+web/dist/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Local data store — created from server/data/db.example.json on first run
+server/data/db.json
+
+# Stitch export archive — the extracted folder is versioned, the zip is a duplicate
+*.zip
+
+# Logs / OS / editors
+*.log
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
+.idea
+
+# Local-only Claude Code permissions
+.claude/settings.local.json
+
+# Atomic-write temp file
+server/data/db.json.tmp
+
+# Stitch mockup export (AI-generated reference, kept locally only)
+design/stitch_personal_hub_productivity_suite/

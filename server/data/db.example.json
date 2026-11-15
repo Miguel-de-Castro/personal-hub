@@ -1,0 +1,219 @@
+{
+  "mode": "demo",
+  "demo": {
+    "tasks": [
+      {
+        "id": "t1",
+        "title": "Refactor Dashboard API Integration",
+        "done": false,
+        "priority": "high",
+        "dueDate": "2026-07-24",
+        "tags": [
+          "Job Search"
+        ],
+        "createdAt": "2026-07-20T09:00:00.000Z"
+      },
+      {
+        "id": "t2",
+        "title": "Weekly Progress Report Sync",
+        "done": false,
+        "priority": "low",
+        "dueDate": "2026-07-25",
+        "tags": [
+          "Team"
+        ],
+        "createdAt": "2026-07-20T09:00:00.000Z"
+      },
+      {
+        "id": "t3",
+        "title": "Complete Design System Documentation",
+        "done": false,
+        "priority": "medium",
+        "dueDate": "2026-07-30",
+        "tags": [
+          "Learning"
+        ],
+        "createdAt": "2026-07-28T09:00:00.000Z"
+      },
+      {
+        "id": "t4",
+        "title": "Prepare Portfolio Presentation",
+        "done": false,
+        "priority": "high",
+        "dueDate": "2026-07-30",
+        "tags": [
+          "Job Search"
+        ],
+        "createdAt": "2026-07-28T09:00:00.000Z"
+      },
+      {
+        "id": "t5",
+        "title": "Deep Learning Course: Module 4",
+        "done": false,
+        "priority": "low",
+        "dueDate": "2026-08-03",
+        "tags": [
+          "Learning"
+        ],
+        "createdAt": "2026-07-28T09:00:00.000Z"
+      },
+      {
+        "id": "t6",
+        "title": "Revisit Q3 Financial Goals",
+        "done": false,
+        "priority": "medium",
+        "dueDate": "2026-08-04",
+        "tags": [
+          "Finance"
+        ],
+        "createdAt": "2026-07-28T09:00:00.000Z"
+      }
+    ],
+    "learningTopics": [
+      {
+        "id": "l1",
+        "title": "Advanced React Patterns",
+        "description": "Mastering compound components, render props, and high-performance rendering.",
+        "status": "in-progress",
+        "progress": 68,
+        "resources": [],
+        "createdAt": "2026-06-01T09:00:00.000Z"
+      },
+      {
+        "id": "l2",
+        "title": "Rust Fundamentals",
+        "description": "Systems programming basics, ownership models, and memory safety.",
+        "status": "completed",
+        "progress": 100,
+        "resources": [],
+        "createdAt": "2026-05-01T09:00:00.000Z"
+      },
+      {
+        "id": "l3",
+        "title": "System Design v3",
+        "description": "Distributed systems at scale, microservices architecture, and load balancing.",
+        "status": "to-learn",
+        "progress": 0,
+        "resources": [],
+        "createdAt": "2026-07-01T09:00:00.000Z"
+      },
+      {
+        "id": "l4",
+        "title": "UI Motion & Interaction",
+        "description": "Principles of Disney animation applied to modern digital interfaces.",
+        "status": "in-progress",
+        "progress": 42,
+        "resources": [],
+        "createdAt": "2026-06-15T09:00:00.000Z"
+      }
+    ],
+    "jobApplications": [
+      {
+        "id": "j1",
+        "company": "Northwind Labs",
+        "role": "Senior Product Designer",
+        "stage": "wishlist",
+        "highPriority": false,
+        "createdAt": "2026-07-28T09:00:00.000Z"
+      },
+      {
+        "id": "j2",
+        "company": "Pixelcraft",
+        "role": "Lead UI/UX Artist",
+        "stage": "wishlist",
+        "highPriority": true,
+        "createdAt": "2026-07-25T09:00:00.000Z"
+      },
+      {
+        "id": "j3",
+        "company": "Globex",
+        "role": "Staff Frontend Eng",
+        "stage": "applied",
+        "highPriority": false,
+        "appliedDate": "2026-07-12",
+        "url": "https://careers.globex.example",
+        "createdAt": "2026-07-12T09:00:00.000Z"
+      },
+      {
+        "id": "j4",
+        "company": "Chirp",
+        "role": "Product Strategy",
+        "stage": "applied",
+        "highPriority": false,
+        "appliedDate": "2026-07-10",
+        "createdAt": "2026-07-10T09:00:00.000Z"
+      },
+      {
+        "id": "j5",
+        "company": "Edgewise",
+        "role": "Design Systems Lead",
+        "stage": "interviewing",
+        "highPriority": false,
+        "notes": "Stage 3/4 — next: onsite next week",
+        "createdAt": "2026-06-20T09:00:00.000Z"
+      },
+      {
+        "id": "j6",
+        "company": "Staywell",
+        "role": "Principal Designer",
+        "stage": "offer",
+        "highPriority": false,
+        "salaryRange": "$185k - $210k",
+        "createdAt": "2026-06-01T09:00:00.000Z"
+      }
+    ],
+    "logEntries": [
+      {
+        "id": "e1",
+        "date": "2026-07-22",
+        "title": "Scaling Architecture",
+        "body": "Today I finalized the microservices architecture for the Personal Hub backend.",
+        "mood": 0,
+        "tags": [
+          "engineering"
+        ],
+        "createdAt": "2026-07-22T20:00:00.000Z"
+      },
+      {
+        "id": "e2",
+        "date": "2026-07-21",
+        "title": "Learning: WebGL Fundamentals",
+        "body": "Deep dive into shader programming. Explored vertex and fragment shaders.",
+        "mood": 0,
+        "tags": [
+          "webgl",
+          "learning"
+        ],
+        "createdAt": "2026-07-21T20:00:00.000Z"
+      },
+      {
+        "id": "e3",
+        "date": "2026-07-20",
+        "title": "Deep Work & Refactoring",
+        "body": "Spent 4 hours refactoring the state management system. Performance improved noticeably.",
+        "mood": 1,
+        "tags": [
+          "engineering"
+        ],
+        "createdAt": "2026-07-20T20:00:00.000Z"
+      },
+      {
+        "id": "e4",
+        "date": "2026-07-19",
+        "title": "Project Planning Phase",
+        "body": "Initial sketches for the Personal Hub dashboard. Focusing on a minimalist, dark aesthetic.",
+        "mood": 0,
+        "tags": [
+          "planning"
+        ],
+        "createdAt": "2026-07-19T20:00:00.000Z"
+      }
+    ]
+  },
+  "live": {
+    "tasks": [],
+    "learningTopics": [],
+    "jobApplications": [],
+    "logEntries": []
+  }
+}
