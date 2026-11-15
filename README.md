@@ -6,7 +6,7 @@ A dark, single-user productivity portal that keeps four parts of a working life 
   <img src="docs/screenshots/dashboard.png" alt="Dashboard" width="820" />
 </p>
 
-Landing page de apresentação (pt-BR): [`landing/`](landing/).
+**Landing page:** https://personal-hub-miguel.vercel.app
 
 ## Features
 
